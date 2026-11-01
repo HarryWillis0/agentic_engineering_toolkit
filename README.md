@@ -1,4 +1,4 @@
-# agentic-engineering-toolkit
+# agentic_engineering_toolkit
 
 Skills, agents, and rules for agentic software engineering. Everything here was built and run in [Claude Code](https://claude.com/claude-code), so it lives under `claude/`. Other tools can sit alongside it.
 
