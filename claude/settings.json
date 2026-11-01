@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  },
+  "model": "sonnet",
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "theme": "auto"
+}
