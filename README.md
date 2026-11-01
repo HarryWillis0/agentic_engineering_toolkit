@@ -1,12 +1,11 @@
 # agentic_engineering_toolkit
 
-Skills, agents, and rules for agentic software engineering. Everything here was built and run in [Claude Code](https://claude.com/claude-code), so it lives under `claude/`. Other tools can sit alongside it.
+Skills and rules for agentic software engineering. Everything here was built and run in [Claude Code](https://claude.com/claude-code), so it lives under `claude/`. Other tools can sit alongside it.
 
 ```
 claude/
 ├── CLAUDE.md          global rules: commit format, linear git history, coding style
 ├── settings.json      permission defaults
-├── agents/            subagent definitions
 └── skills/            one folder per skill, each with a SKILL.md
 ```
 
@@ -20,7 +19,6 @@ To use a skill, copy its folder into `~/.claude/skills/` (or a project's `.claud
 |---|---|---|
 | [`grill-me`](claude/skills/grill-me/SKILL.md) | Plans fail at their unexamined branches. This walks the decision tree one question at a time until nothing is left ambiguous. | `/grill-me` then paste a design |
 | [`roadmap`](claude/skills/roadmap/SKILL.md) | Turns a product interview into GitHub milestones, so planning ends up in the tracker rather than in a doc. | `/roadmap` |
-| [`to-prd`](claude/skills/to-prd/SKILL.md) | Captures a conversation's decisions as a PRD before they scroll away. | `/to-prd` |
 | [`to-tasks`](claude/skills/to-tasks/SKILL.md) | Splits a PRD into thin vertical slices that can each be picked up independently. | `/to-tasks docs/prd.md` |
 
 ### Implementation
@@ -44,16 +42,6 @@ Each audit files GitHub issues under a label. Its `implement-*` companion works 
 | [`ux-audit`](claude/skills/ux-audit/SKILL.md) | — | `ux` | Proposes usability recommendations and files only the ones you approve. |
 
 Example: `/code-audit`, then `/implement-excellence`.
-
-### Process
-
-| Skill | Why it exists | Example |
-|---|---|---|
-| [`retro`](claude/skills/retro/SKILL.md) | Mines a session for corrections and friction, then proposes durable edits to skills and rules. | `/retro` |
-
-## Agents
-
-- [`task-implementer`](claude/agents/task-implementer.agent.md): works through a PRD and tasks folder, picks an unblocked task, asks for approval before starting and before marking it done, and implements with `tdd`.
 
 ## License
 
